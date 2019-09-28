@@ -18,3 +18,11 @@ img.ri:empty
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
+@media screen and (orientation: portrait) {
+  img.ri { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.ri { max-height: 90%; }
+}
