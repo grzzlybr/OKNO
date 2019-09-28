@@ -1,4 +1,13 @@
-.responsive {
-  max-width: 100%;
-  height: auto;
+div {
+  width:80vw;
+  height:80vh;
+  background:yellow;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
 }
+img {
+  max-width:100%;
+  height:auto;
+  max-height:100%;
+  }
