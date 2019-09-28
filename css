@@ -1,4 +1,5 @@
 .responsive {
+  position:absolute;
   width: 50%;
   height: 80%;
 }
