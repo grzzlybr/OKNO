@@ -21,7 +21,17 @@ img.logo {
   </style>
 </head>
 <body>
-<div class="shadow"><a onClick="window.location.reload()"><img class="logo" src="https://grzzlybr.github.io/nope/imgs/Nope1.jpg" /></a></div>
+<div class="shadow"><a onClick="window.location.reload()"><img class="logo" src="" /></a></div>
+    <script type="text/javascript">
+        const images = [
+            'https://grzzlybr.github.io/nope/imgs/Nope1.jpg',
+            'https://grzzlybr.github.io/nope/imgs/Nope2.jpg',                        
+        ];
+        
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('.logo').setAttribute('src', images[Math.floor(Math.random() * images.length - 1) + 1  ]);    
+        });
+    </script>
 </body>
 </html>
 
