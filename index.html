@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+body { background-color: #EFEEEE; }
 .responsive {
   width: 100%;
   max-width: 400px;
@@ -11,7 +12,19 @@
 </style>
 </head>
 <body>
-<center><img src="https://grzzlybr.github.io/OKNO/imgs/OKNO1.jpg" alt="Nature" class="responsive"></center>
-
+<center><a onClick="window.location.reload()"><img class="responsive" src="" /></a></center>
+    <script type="text/javascript">
+        const images = [
+            'https://grzzlybr.github.io/OKNO/imgs/Nope1.jpg',
+            'https://grzzlybr.github.io/OKNO/imgs/Nope2.jpg',  
+            'https://grzzlybr.github.io/OKNO/imgs/Nope3.jpg',
+            'https://grzzlybr.github.io/OKNO/imgs/Nope4.jpg', 
+            'https://grzzlybr.github.io/OKNO/imgs/OKNO1.jpg',   
+        ];
+        
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('.responsive').setAttribute('src', images[Math.floor(Math.random() * images.length - 1) + 1  ]);    
+        });
+    </script>
 </body>
 </html>
